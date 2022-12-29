@@ -1,0 +1,6 @@
+com/levi/microservicedemo/domain/Customer.class
+com/levi/microservicedemo/service/CustomerService.class
+com/levi/microservicedemo/MicroservicedemoApplication.class
+com/levi/microservicedemo/controller/HelloController.class
+com/levi/microservicedemo/controller/CustomerController.class
+com/levi/microservicedemo/repository/CustomerRepository.class
