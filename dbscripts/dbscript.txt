@@ -1,0 +1,35 @@
+
+
+
+select * from customermicroservicedemo.customer where name = 'pawan';
+select * from customermicroservicedemo.customer;
+
+ 
+
+
+INSERT INTO customermicroservicedemo.customer
+(id, "name", age, "role")
+VALUES(1001, 'pawan', 32, 'valued');
+commit;
+
+--delete from customermicroservicedemo.customer where name = 'pawan';
+
+
+
+------ DDL --------------
+
+select version();
+
+
+CREATE SCHEMA customermicroservicedemo AUTHORIZATION postgres;
+
+
+CREATE TABLE customermicroservicedemo.customer (
+	id varchar NOT NULL,
+	"name" bpchar(200) NOT NULL,
+	age int4 NOT NULL,
+	"role" bpchar(50) NULL,
+	CONSTRAINT customer_pkey PRIMARY KEY (id)
+);
+commit;
+
